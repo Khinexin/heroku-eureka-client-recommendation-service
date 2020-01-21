@@ -16,7 +16,7 @@ public class RecommendationController {
     @RequestMapping(value = "/recommendations", method = RequestMethod.GET)
     @ResponseBody
     public Movie[] recommendations() {
-        Movie[] result = restTemplate.getForObject("http://movie-service/movies", Movie[].class);
+        Movie[] result = restTemplate.getForObject("http://my-movie-service/movies", Movie[].class);
         return result;
     }
 }
