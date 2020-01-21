@@ -5,7 +5,7 @@ eureka:
 security:
   user:
     password: ${eureka.password}
-
+  
 ---
 spring:
   profiles: heroku
